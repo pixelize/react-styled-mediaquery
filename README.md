@@ -52,13 +52,13 @@ You can either use the default breakpoints shortcuts using the string `mobile | 
 ### >
 Element will be blue above the tablet breakpoint
 
-    ${mediaQuery("<", "tablet")`
+    ${mediaQuery(">", "tablet")`
     	background: blue;
     `}
 ### =>
 Element will be blue above & including the tablet breakpoint
 
-    ${mediaQuery("<", "tablet")`
+    ${mediaQuery("=>", "tablet")`
     	background: blue;
     `}
 ### <
@@ -71,7 +71,7 @@ Element will be blue below
 ### <=
 Element will be blue below & including the tablet breakpoint
 
-    ${mediaQuery("<", "tablet")`
+    ${mediaQuery("<=", "tablet")`
     	background: blue;
     `}
 ## Custom Breakpoints
