@@ -46,7 +46,7 @@ const App = () => {
 
 ## Conditions & default breakpoints
 
-You can either use the default breakpoints shortcuts using the string `mobile | phablet | tablet | desktop`. Just mix you condition and breakpoint as you wish !
+You can either use the default breakpoints shortcuts using the string `mobile | phablet | tablet | desktop`. Just mix you conditions and breakpoints as you wish !
 
 ### >
 Element will be blue above the tablet breakpoint
@@ -79,6 +79,15 @@ Element will be blue below & including the phablet breakpoint
 
 ```jsx
 ${mediaQuery("<=", "phablet")`
+  background: blue;
+`}
+```
+
+### between
+Element will be blue between the phablet and desktop breakpoint
+
+```jsx
+${mediaQuery("between", "phablet", "desktop")`
   background: blue;
 `}
 ```
