@@ -23,7 +23,7 @@ Also: See example folder in `gatsby/pages`. You can run it locally using [Gatsby
 import React, { useState } from "react";
 import { mediaQuery } from "react-styled-mediaquery";
 
-const  BelowTablet  =  styled(Card)`
+const  Card  =  styled.div`
   background: red;
 
   ${mediaQuery("<", "tablet")`
@@ -46,7 +46,7 @@ const App = () => {
 
 ## Conditions & default breakpoints
 
-You can either use the default breakpoints shortcuts using the string `mobile | phablet | tablet | desktop`
+You can either use the default breakpoints shortcuts using the string `mobile | phablet | tablet | desktop`. Just mix you condition and breakpoint as you wish !
 
 ### >
 Element will be blue above the tablet breakpoint
@@ -57,28 +57,28 @@ ${mediaQuery(">", "tablet")`
 ```
 
 ### =>
-Element will be blue above & including the tablet breakpoint
+Element will be blue above & including the mobile breakpoint
 
 ```jsx
-${mediaQuery("=>", "tablet")`
+${mediaQuery("=>", "mobile")`
   background: blue;
 `}
 ```
 
 ### <
-Element will be blue below
+Element will be blue below desktop breakpoints
 
 ```jsx
-${mediaQuery("<", "tablet")`
+${mediaQuery("<", "desktop")`
   background: blue;
 `}
 ```
 
 ### <=
-Element will be blue below & including the tablet breakpoint
+Element will be blue below & including the phablet breakpoint
 
 ```jsx
-${mediaQuery("<=", "tablet")`
+${mediaQuery("<=", "phablet")`
   background: blue;
 `}
 ```
