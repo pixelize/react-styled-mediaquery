@@ -9,7 +9,7 @@
 
 [Github page](https://pixelize.github.io/react-styled-mediaquery/)
 
-Also: See example folder. You can run it locally using [Gatsby](https://www.gatsbyjs.org/) just clone the repos and use `yarn start` in your CLI. Demo is running on `localhost:8000`
+Also: See example folder in `gatsby/pages`. You can run it locally using [Gatsby](https://www.gatsbyjs.org/) just clone the repos and use `yarn start` in your CLI. Demo is running on `localhost:8000`
 
 ## Installation
 
