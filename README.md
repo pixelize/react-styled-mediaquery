@@ -46,7 +46,7 @@ const App = () => {
 
 ## Conditions & default breakpoints
 
-You can either use the default breakpoints shortcuts using the string `mobile | phablet | tablet | desktop`. Just mix you conditions and breakpoints as you wish !
+You can either use the default breakpoints shortcuts using the string `mobile | phablet | tablet | desktop`. Just mix your condition and breakpoints as you wish !
 
 ### >
 Element will be blue above the tablet breakpoint
