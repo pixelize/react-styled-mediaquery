@@ -1,0 +1,6 @@
+/dist
+/lib
+/tmp
+/.cache
+/node_modules
+/public
