@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-const devices: {[key: string]: string} = {
+const devices: { [key: string]: string } = {
   mobile: "412px",
   phablet: "600px",
   tablet: "768px",
@@ -16,25 +16,25 @@ export const mediaQuery = (condition: Condition, breakpoint: string, breakpoint2
     case ">":
       return (...args: any) => css`
           @media only screen and (min-width: calc(${deviceCheck} + 1px)) {
-
+            ${css.call(undefined, ...args)}
           }
         `;
     case ">=":
       return (...args: any) => css`
         @media only screen and (min-width: ${deviceCheck}) {
-
+          ${css.call(undefined, ...args)}
         }
       `;
     case "<":
       return (...args: any) => css`
           @media only screen and (max-width: calc(${deviceCheck} - 1px)) {
-
+            ${css.call(undefined, ...args)}
           }
         `;
     case "<=":
       return (...args: any) => css`
         @media only screen and (max-width: ${deviceCheck}) {
-
+          ${css.call(undefined, ...args)}
         }
       `;
     case "between":
