@@ -85,7 +85,7 @@ These are the default settings, you can overwrite with your own breakpoints
 	    desktop: "1024px"
     };
 
-You can also you with a custom declarative breakpoint in pixel i.e:
+You can also use the function with a custom declarative breakpoint in pixel i.e:
 
     ${mediaQuery("<", "638px")`
     	background: blue;
