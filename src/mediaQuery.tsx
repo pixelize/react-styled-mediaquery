@@ -7,9 +7,13 @@ const devices: { [key: string]: string } = {
   desktop: "1024px"
 };
 
-type Condition = ">" | ">=" | "<" | "<=" | "between"
+type Condition = ">" | ">=" | "<" | "<=" | "between";
 
-export const mediaQuery = (condition: Condition, breakpoint: string, breakpoint2: string) => {
+export const mediaQuery = (
+  condition: Condition,
+  breakpoint: string,
+  breakpoint2?: string
+) => {
   const deviceCheck = devices[breakpoint] || breakpoint;
 
   switch (condition) {
@@ -40,9 +44,8 @@ export const mediaQuery = (condition: Condition, breakpoint: string, breakpoint2
     case "between":
       return (...args: any) => css`
         @media (min-width: ${deviceCheck}) and (max-width: ${devices[
-        breakpoint2
-        ] || breakpoint2}) {
-
+            breakpoint2
+          ] || breakpoint2}) {
         }
       `;
   }
