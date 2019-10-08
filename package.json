@@ -25,14 +25,14 @@
     "lib"
   ],
   "keywords": [
-    "animation",
-    "dom",
-    "declarative",
-    "popmotion",
+    "breakpoint",
+    "styled-components",
+    "responsive",
+    "media query",
     "react",
-    "react animation"
+    "media queries"
   ],
-  "author": "Matt Perry",
+  "author": "Gauthier Eloy",
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.3.2",
