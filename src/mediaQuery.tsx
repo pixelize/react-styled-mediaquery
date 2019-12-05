@@ -46,7 +46,7 @@ export const mediaQuery = (
         @media (min-width: ${deviceCheck}) and (max-width: ${devices[
             breakpoint2
           ] || breakpoint2}) {
-            ${css.call(undefined, ...args)}
+          ${css.call(undefined, ...args)}
         }
       `;
   }
