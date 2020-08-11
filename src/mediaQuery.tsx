@@ -9,6 +9,12 @@ const devices: { [key: string]: string } = {
 
 type Condition = ">" | ">=" | "<" | "<=" | "between";
 
+const addToPx = (value: string, add: number) => {
+  const match = value.match(/(\d+)px/)
+  if (!match) return value
+  return `${parseInt(match[0]) + add}px`
+}
+
 export const mediaQuery = (
   condition: Condition,
   breakpoint: string,
@@ -19,7 +25,7 @@ export const mediaQuery = (
   switch (condition) {
     case ">":
       return (...args: any) => css`
-          @media only screen and (min-width: calc(${deviceCheck} + 1px)) {
+          @media only screen and (min-width: ${addToPx(deviceCheck, 1)}) {
             ${css.call(undefined, ...args)}
           }
         `;
@@ -31,7 +37,7 @@ export const mediaQuery = (
       `;
     case "<":
       return (...args: any) => css`
-          @media only screen and (max-width: calc(${deviceCheck} - 1px)) {
+          @media only screen and (max-width: ${addToPx(deviceCheck, -1)}) {
             ${css.call(undefined, ...args)}
           }
         `;
