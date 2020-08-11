@@ -1,6 +1,6 @@
 {
   "name": "react-styled-mediaquery",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple and practical utility for managing media queries in react with styled components",
   "main": "./lib/index.js",
   "module": "./dist/react-styled-mediaquery.es.js",
