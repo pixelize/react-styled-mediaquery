@@ -31,7 +31,7 @@ const  Card  =  styled.div`
   `}
 
   ${mediaQuery(">", "desktop")`
-    background: red;
+    background: yellow;
   `}
 `
 
