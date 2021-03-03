@@ -20,7 +20,7 @@ Also: See example folder in `gatsby/pages`. You can run it locally using [Gatsby
 ## Usage
 
 ```jsx
-import React, { useState } from "react";
+import React from "react";
 import { mediaQuery } from "react-styled-mediaquery";
 
 const  Card  =  styled.div`
