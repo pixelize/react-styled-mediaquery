@@ -45,7 +45,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.1.19",
     "concurrently": "^4.1.2",
-    "gatsby": "^2.15.14",
+    "gatsby": "^4.25.7",
     "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
